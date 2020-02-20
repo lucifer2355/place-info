@@ -9,3 +9,4 @@ ________________________Install Library___________________________
 4. npm install react-native-screens
 5. npm install react-navigation-drawer
 6. npm install react-navigation
+7. npm install --save react-navigation-header-buttons
