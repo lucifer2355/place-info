@@ -1,7 +1,7 @@
 # place-info
 Place Information is  basic react native application. Application use Map, Camera component &amp; SQLite File Storage
 
-___________________________________Install Library_______________________________
+________________________Install Library___________________________
 
 1. npm install --save redux react-redux react-navigation react-navigation-header-buttons
 2. expo install react-native-gesture-handler react-native-reanimated
