@@ -12,3 +12,4 @@ ________________________Install Library___________________________
 7. npm install --save react-navigation-header-buttons
 8. npm instal --save redux react-redux redux-thunk
 9. expo install expo-image-picker
+10. expo install expo-permissions
