@@ -14,3 +14,4 @@ ________________________Install Library___________________________
 9. expo install expo-image-picker
 10. expo install expo-permissions
 11. expo install expo-file-system
+12. expo install expo-sqlite
