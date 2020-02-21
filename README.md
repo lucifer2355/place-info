@@ -13,3 +13,4 @@ ________________________Install Library___________________________
 8. npm instal --save redux react-redux redux-thunk
 9. expo install expo-image-picker
 10. expo install expo-permissions
+11. expo install expo-file-system
