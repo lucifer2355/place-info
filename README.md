@@ -16,3 +16,4 @@ ________________________Install Library___________________________
 11. expo install expo-file-system
 12. expo install expo-sqlite
 13. expo install expo-location
+14. expo install react-native-maps
