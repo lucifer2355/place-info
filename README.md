@@ -10,7 +10,7 @@ ________________________Install Library___________________________
 5. npm install react-navigation-drawer
 6. npm install react-navigation
 7. npm install --save react-navigation-header-buttons
-8. npm instal --save redux react-redux redux-thunk
+8. npm install --save redux react-redux redux-thunk
 9. expo install expo-image-picker
 10. expo install expo-permissions
 11. expo install expo-file-system
