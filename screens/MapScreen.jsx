@@ -4,13 +4,13 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  Platform
+  Platform,
 } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 
 import Colors from "../constants/Colors";
 
-const MapScreen = props => {
+const MapScreen = (props) => {
   const initialLocation = props.navigation.getParam("initialLocation");
   const readonly = props.navigation.getParam("readonly");
   const [selectedLocation, setSelectedLocation] = useState(initialLocation);
@@ -19,17 +19,17 @@ const MapScreen = props => {
     latitude: initialLocation ? initialLocation.lat : 37.78,
     longitude: initialLocation ? initialLocation.lng : -122.43,
     latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421
+    longitudeDelta: 0.0421,
   };
 
-  const selectLocationHandler = event => {
+  const selectLocationHandler = (event) => {
     if (readonly) {
       return;
     }
 
     setSelectedLocation({
       lat: event.nativeEvent.coordinate.latitude,
-      lng: event.nativeEvent.coordinate.longitude
+      lng: event.nativeEvent.coordinate.longitude,
     });
   };
 
@@ -46,7 +46,7 @@ const MapScreen = props => {
   if (selectedLocation) {
     markerCoordinates = {
       latitude: selectedLocation.lat,
-      longitude: selectedLocation.lng
+      longitude: selectedLocation.lng,
     };
   }
 
@@ -63,28 +63,28 @@ const MapScreen = props => {
   );
 };
 
-MapScreen.navigationOptions = navData => {
+MapScreen.navigationOptions = (navData) => {
   const saveFn = navData.navigation.getParam("saveLocation");
   return {
     headerRight: () => (
       <TouchableOpacity style={styles.headerButton} onPress={saveFn}>
         <Text style={styles.headerButtonText}>Save</Text>
       </TouchableOpacity>
-    )
+    ),
   };
 };
 
 const styles = StyleSheet.create({
   map: {
-    flex: 1
+    flex: 1,
   },
   headerButton: {
-    marginHorizontal: 20
+    marginHorizontal: 20,
   },
   headerButtonText: {
     fontSize: 16,
-    color: Platform.OS === "android" ? "white" : Colors.primary
-  }
+    color: Platform.OS === "android" ? "white" : Colors.primary,
+  },
 });
 
 export default MapScreen;
